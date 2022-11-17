@@ -1,3 +1,15 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+}
+
+
+
 :root{
     --primary-text-color: #757575;
     --title-text-color:#212121;
@@ -25,11 +37,21 @@ body{
 .list .link:focus{
     color:var(--accent-color);
 }
+
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
 .studio:active{
     color: tomato;
 }
 
 .list{
+    padding: 0px;
+    margin: 0px;
     list-style: none;
 }
 
@@ -73,16 +95,27 @@ body{
 
 
 .hero{
+    text-align: center;
     background:var(--secondary-bg-color);
 }
 .hero-title{
+
+    margin-top: 0px;
+    margin-bottom: 40px;
     font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--primary-bg-color);
+}
+
+.hero-button{
+    border-radius: 4px;
+    padding: 8px 22px;
+    display: inline-block;
+    min-width: 200px;
+    
 }
 .hero-button{
         cursor: pointer;
@@ -96,7 +129,9 @@ body{
         letter-spacing: 0.06em;
         background: var(--accent-color);
         color: var(--primary-bg-color);
+        
 }
+
 .hero-button:hover,
 .hero-button:focus{
     color: var(--accent-color);
@@ -106,6 +141,7 @@ body{
 
 
 .features-title{
+    margin-top: 0px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
