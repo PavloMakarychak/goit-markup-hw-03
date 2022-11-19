@@ -21,6 +21,9 @@ html{
 
 
 body{
+    position: relative;
+    width: 1600px;
+    height: 2345px;
     font-family: "Roboto",sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -42,10 +45,10 @@ body{
 .container{
     margin-right: auto;
     margin-left: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+
 }
 
 
@@ -53,6 +56,12 @@ body{
     padding: 0px;
     margin: 0px;
     list-style: none;
+}
+
+.header{
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color:#ECECEC;
 }
 
 .main-nav{
@@ -119,12 +128,16 @@ body{
 
 
 
-
+.section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
 .hero{
     text-align: center;
     background:var(--secondary-bg-color);
 }
+
 .hero-title{
 
     margin-top: 0px;
@@ -228,7 +241,18 @@ body{
 .card-list .card:not(:last-child){
     margin-right: 30px;
 }
-.team{
+
+.section-hero,
+.section-features,
+.section-team,
+.section-work,
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.team.title{
     margin-top: 0px;
     margin-bottom: 50px;
 }
@@ -313,6 +337,7 @@ color:var(--primary-text-color);
  .filter-list{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
  }
  .filter-list .item:not(:last-child){
     margin-right: 8px;
