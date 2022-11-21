@@ -64,8 +64,12 @@ body{
 .main-nav{
     display: flex;
     align-items: center;
+}
 
-
+.logo,
+.header-logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .logo{
     font-family: 'Raleway';
@@ -85,11 +89,16 @@ body{
     font-weight: 500;
     display: flex;
     margin-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
-    
+.activ,
+.nav,
+.mailto,
+.tel{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}    
 
 .site-nav .item:not(:last-child){
     margin-right: 50px;
@@ -133,8 +142,8 @@ body{
 
 
 .section{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    /* margin-top: 94px; */
+    /* margin-bottom: 94px; */
 }
 
 .hero{
@@ -144,18 +153,17 @@ body{
 }
 
 .hero-title{
-
-    margin-top: 0px;
-    margin-bottom: 40px;
-    width: 696px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--primary-bg-color);
+margin-top: 0px;
+margin-bottom: 30px;
+width: 696px;
+margin-right: auto;
+margin-left: auto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--primary-bg-color);
 }
 
 
@@ -165,7 +173,6 @@ body{
     padding: 8px 22px;
     display: inline-block;
     min-width: 200px;
-    
 }
 .hero-button{
         cursor: pointer;
@@ -178,7 +185,7 @@ body{
         letter-spacing: 0.06em;
         background: var(--accent-color);
         color: var(--primary-bg-color);
-        
+        border: none;
 }
 
 .hero-button:hover,
@@ -236,10 +243,10 @@ body{
 .work .title,
 .team .title{
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
 }
 .work-img{
     display: block;
@@ -261,7 +268,10 @@ body{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.work.section,
+.team.section{
+    padding-top: 0px;
+}
 
 .team.title{
     margin-top: 0px;
@@ -305,24 +315,29 @@ text-align: center;
 color:var(--primary-text-color);
 }
 .team-img{
+    display: block;
     margin-top: 0px;
+    max-width: 100%;
+    height:auto;
 }
-
-
-
 
 
 
 .footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
- background: var(--secondary-bg-color);
+background: var(--secondary-bg-color);
 }
 
-.web.logo.link{
+.footer .container{
+ padding-top: 60px;
+ padding-bottom: 60px;  
+ 
+}
+
+.footer.link{
     display: block;
     margin-bottom: 28px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .footer-logo{
@@ -331,22 +346,29 @@ color:var(--primary-text-color);
     color:var(--primary-bg-color);
 }
 
-.footer-adress{
-    margin-top: 0px;
-    margin-bottom: 12px;
-        line-height: 1.71;
-        color: var(--primary-bg-color);
+
+
+.features-list{
+   display: block; 
 }
-.footer-mailto{
+.footer-list .item:not(:last-child){
     margin-bottom: 12px;
 }
 
- .footer-mailto,
+.footer-adress{
+    margin-top: 0px;
+    line-height: 1.71;
+    color: var(--primary-bg-color);
+}
+.footer-mailto,
   .footer-tel{
     margin-top: 0px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
  }
+
+
+
 
 
 
@@ -385,7 +407,7 @@ color:var(--primary-text-color);
     background: #F5F4FA;
     color: var(--title-text-color);  
     border: 0em;
-border-radius: 4px;
+    border-radius: 4px;
 
  }
  
@@ -408,7 +430,10 @@ border-radius: 4px;
 }
 
  .projects-img{
+    display: block;
     margin-top: 0px;
+    max-width: 100%;
+    height: auto;
  }
 
  .projects-end{
