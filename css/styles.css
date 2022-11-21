@@ -141,11 +141,6 @@ body{
 
 
 
-.section{
-    /* margin-top: 94px; */
-    /* margin-bottom: 94px; */
-}
-
 .hero{
     padding: 200px 0px;
     text-align: center;
@@ -197,11 +192,14 @@ color: var(--primary-bg-color);
 
 
 
-.features-list{
+
+.features-list {
     display: flex;
     justify-content: space-between;
+
 }
-.features-list .item:not(:last-child){
+
+.features-list.item:not(:last-child){
     margin-right: 30px;
 }
 .features-list .item{
@@ -348,9 +346,7 @@ background: var(--secondary-bg-color);
 
 
 
-.features-list{
-   display: block; 
-}
+
 .footer-list .item:not(:last-child){
     margin-bottom: 12px;
 }
