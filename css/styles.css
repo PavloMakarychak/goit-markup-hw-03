@@ -195,7 +195,7 @@ color: var(--primary-bg-color);
 
 .features-list {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 
 }
 
